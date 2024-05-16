@@ -34,8 +34,11 @@ const getProductById = async (req, res) => {
 //create new product
 const  createProduct = async (req, res) => {
     try{
-        const product = req.body
-        const newProduct = await new Product(product)
+        const product = new Product(req.body)
+        if(product){
+            res.status(400).json({message : 'Product already exists'})
+        }
+        const newProduct = await product.save()
         res.status(201).json(newProduct)
     }
     catch(err){
