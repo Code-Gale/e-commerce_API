@@ -1,0 +1,35 @@
+{
+  "name": "e-commerce_api",
+  "version": "1.0.0",
+  "description": "An e-commerce API built with Nodejs, Expressjs, MongoDB",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Code-Gale/e-commerce_API.git"
+  },
+  "keywords": [
+    "Ecommerce",
+    "API",
+    "Nodejs",
+    "E-commerce"
+  ],
+  "author": "Code Singer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Code-Gale/e-commerce_API/issues"
+  },
+  "homepage": "https://github.com/Code-Gale/e-commerce_API#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.6.1",
+    "mongoose": "^8.3.5",
+    "nodemon": "^3.1.0",
+    "validator": "^13.12.0"
+  }
+}
